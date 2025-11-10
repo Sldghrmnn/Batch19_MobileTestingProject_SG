@@ -3,7 +3,8 @@ package com.appium.utils;
 public enum App {
 
     Api_Demos("com.touchboarder.android.api.demos","com.touchboarder.androidapidemos.MainActivity", "API DemosV6.apk"),
-    Colculator("","","");
+    Colculator("com.google.android.calculator","com.android.calculator2.Calculator",""),
+    Chrome("com.android.chrome","com.google.android.apps.chrome.Main","");
 
 
     public final String appPackage;

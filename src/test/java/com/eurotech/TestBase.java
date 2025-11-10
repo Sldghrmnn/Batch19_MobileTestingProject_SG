@@ -8,6 +8,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import static com.appium.utils.MobileUtils.*;
 
@@ -25,7 +27,9 @@ public class TestBase {
     }
 
     @AfterTest
-    public void afterTest(){
-        closeApp();
+    public void afterTest() throws InterruptedException {
+        Thread.sleep(2000);
+       // closeApp();
+        closeAllApps(new ArrayList<>(Arrays.asList(App.Chrome.appPackage, App.Api_Demos.appPackage,App.Colculator.appPackage)));
     }
 }
