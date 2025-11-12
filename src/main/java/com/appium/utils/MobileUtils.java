@@ -3,13 +3,12 @@ package com.appium.utils;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.appmanagement.ApplicationState;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
 
 import java.time.Duration;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 import static com.appium.utils.Driver.*;
 
@@ -113,6 +112,8 @@ public class MobileUtils implements Locators{
             throw new RuntimeException(e);
         }
     }
+
+
 }
 
 

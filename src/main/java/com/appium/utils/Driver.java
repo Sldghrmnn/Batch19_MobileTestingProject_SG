@@ -7,6 +7,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Driver {
 
+    private Driver(){}
+
     static AppiumDriverLocalService service;
     private static AndroidDriver driver;
 

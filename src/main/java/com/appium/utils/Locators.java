@@ -13,4 +13,6 @@ public interface Locators {
     By lTabsElements = By.className("android.widget.TextView");
 
     By lResult = By.id("result_final");
+
+    By lListOfViewMenu= By.id("android:id/text1");
 }
